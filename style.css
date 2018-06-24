@@ -1,0 +1,393 @@
+/*移动端代码样式重置*/
+	/*公共样式处理*/
+*{
+    margin:0;
+    padding:0;
+}
+body {
+	font-family:helvetica;
+	/*横竖屏切换禁止改变字体大小*/
+	/*-webkit-text-size-adjust:100%*/
+	-webkit-text-size-adjust:none;
+	/*取消选择复制等*/
+	-webkit-user-select: none;
+}
+a {
+  text-decoration: none;
+}
+ul,ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*移动端图片边框   相当于  border:0*/
+img {vert-align: top;} 
+/*移动端点击出现的背景色*/
+a,input,button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  border: 0;
+  /*取消按钮ios下默认外观*/
+  -webkit-appearance:none;
+}
+/*取消聚焦下的外边框*/
+input,textarea{
+	outline:none;
+	text-indent: 3em;
+	}
+/*默认样式处理完毕*/
+/*公共样式开始*/
+/*swiper*/
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+a{
+	
+	color: rgb(116,116,116);
+	font-size:0.64rem;
+	font-weight:300;
+}
+body{
+	background-color: rgb(242, 242, 242);
+}
+/*公共样式结束*/
+/*头部*/
+#header{
+	width: 100%;
+	height:3.36rem;
+	background-color:rgb(242, 242, 242);
+	box-sizing: border-box;
+	padding-bottom:0.32rem;
+	/*position: fixed;
+	top: 0;
+	z-index: 99;*/
+}
+#header .top{
+	display: flex;
+	justify-content: space-around;
+	padding:0.32rem 0;
+}
+#header .top img{
+	width: 1rem;
+}
+#header .top input{
+	
+	width: 10.8408rem;
+	height: 1.3304rem;
+	background: url('img/sear.png') no-repeat;
+	background-size:1.2504rem 1.2504rem;
+	background-position:0.2rem center ;
+	background-color: #fff;
+}
+#header .tabs ul{
+	display:flex;
+	justify-content:space-around;
+}
+#header .tabs ul li a.active{
+	border-bottom:2px solid rgb(237, 91, 0);
+	padding-bottom:0.16rem;
+	color:rgb(237, 91, 0);
+}
+#banner img{
+	width: 15rem;
+}
+#nav{
+	background-color: #fff;
+}
+#nav ul{
+	display: flex;
+	justify-content: space-around;
+}
+#nav ul img{
+	width: 3.0016rem;
+	height: 3.168rem;
+}
+#hotsale{
+	background-color: #fff;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+}
+#hotsale  img{
+	width: 7.462rem;
+}
+#hotsale .left{
+	height: 10.5884rem;
+}
+#hotsale .right{
+	height: 10.5884rem;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+	/*justify-content:ju*/
+}
+#ad1{
+	width: 15rem;
+	margin-top:0.3336rem;
+}
+#ad1 img:first-child{
+	width:15rem;
+	height:5.836rem;
+	display: block!important;
+}
+#ad1 img:last-child{
+	height: 9.1716rem;
+
+}
+/*商品区*/
+#shop1 ul{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#shop1 ul li{
+	width: 7.4rem;
+}
+#shop1 ul li img{
+	width: 100%;
+}
+ ul li p{
+	background-color: #fff;
+	display: flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	text-indent:0.416rem;
+	margin-top:-0.16rem;
+}
+/*商品p下面样式不使用高权重选择器保证相同结构样式传递*/
+ul li p .name{
+	color:#333;
+	font-size: 0.6rem;
+}
+ul li p .desc{
+	font-size: 0.48rem;
+	width:90%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+ul li p .price{
+	color: rgb(255, 107, 0);
+
+}
+ul li p .price .oldp{
+	color:rgb(117, 117, 117);
+	font-size: 0.52rem;
+}
+/*广告二区*/
+#ad2{
+	width: 15rem;
+	margin-top:0.3336rem;
+}
+#ad2 img:first-child{
+	width:15rem;
+	height:5.836rem;
+	display: block!important;
+}
+#ad2 img:last-child{
+	width:15rem;
+	height: 9.1716rem;
+}
+/*电视区*/
+#tv ul{
+		display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#tv ul li{
+	width: 7.4rem;
+	display: flex;
+}
+/*承装图片的父级*/
+#tv li .img{
+		position: relative;
+}
+#tv ul li .img img:first-child{
+	width:100%;
+}
+/*定位的标签*/
+#tv ul li .img img:last-child{
+	width: 2.5012rem;
+	height:0.6672rem;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.more{
+	width:15rem;
+	height:1.6rem;
+	line-height: 1.6rem;
+	text-align: center;
+	background-color: #fff;
+	padding: 0.4rem 0;
+	border-top:0.04rem solid rgba(0,0,0,.3);
+	font-size: 20px;
+	color: #666;
+}
+/*广告三区*/
+#ad3{
+	width: 15rem;
+	margin-top:0.3336rem;
+}
+#ad3 img:first-child{
+	width:15rem;
+	height:5.836rem;
+	display: block!important;
+}
+#ad3 img:last-child{
+	width:15rem;
+	height: 9.1716rem;
+}
+/*新品区*/
+/*承装图片的父级*/
+#news ul{
+		display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#news ul li{
+	width: 7.4rem;
+	display: flex;
+}
+#news li .img{
+		position: relative;
+}
+#news ul li .img img:first-child{
+	width:100%;
+}
+/*定位的标签*/
+#news ul li .img img:last-child{
+	width: 1.6676rem;
+	height:0.6672rem;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+/*广告四区*/
+#ad4{
+	width: 15rem;
+	margin-top:0.3336rem;
+}
+#ad4 img:first-child{
+	width:15rem;
+	height:5.836rem;
+	display: block!important;
+}
+#ad4 img:last-child{
+	width:15rem;
+	height: 9.1716rem;
+}
+/*智能区*/
+#intel {
+	display: flex;
+	flex-direction: column;
+}
+#intel>div:not(.more){
+	display: flex;
+	flex-direction: row;
+	margin-top:-0.24rem;
+}
+#intel>div img{
+	width:7.504rem;
+	height: 7.504rem;
+}
+ #intel  .text p{
+ 	display: flex;
+ 	flex-direction: column;
+	background-color: #fff;
+	width: 7.504rem;
+	height: 7.504rem;
+	box-sizing:border-box;
+	padding: 1.340399rem 0.66704rem;
+}
+ #intel  .text p .name{
+	color:#333;
+	font-size: 0.56rem;
+}
+ #intel  .text p .desc{
+	font-size: 0.48rem;
+	width:90%;
+	color:rgb(117, 117, 117);
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+ #intel  .text p .price{
+	color: rgb(255, 107, 0);
+	font-size: 0.64rem;
+}
+#intel .more{
+	margin-top:-0.24rem;
+	margin-bottom: 0.3336rem;
+}
+/*分类模块*/
+#sort{
+	/*margin-top:1rem;*/
+}
+#sort ul{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#sort ul li{
+	width: 7.4rem;
+}
+#sort ul li img{
+	width: 100%;
+}
+#ad5 img{
+	width:15rem;
+}
+/*底部*/
+#footer{
+	width: 15rem;
+	height: 2.08rem;
+	background-color: #fff;
+	margin-top:0.333999rem;
+	padding: 0.32rem 0;
+	position:fixed;
+	bottom: 0;
+		
+}
+#footer ul{
+	display: flex;
+	justify-content: space-around;
+	
+}
+#footer ul a{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+}
+/*选择当前tab页的样式*/
+#footer ul a.active .title{
+	color:rgb(245, 108, 2)
+}
+#footer ul a img{
+	width:0.8336rem;
+	height: 0.8336rem;
+	/*text-align: center;*/
+}
+

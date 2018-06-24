@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no"/>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="swiper/css/swiper.css" />
+		<script src="swiper/js/swiper.min.js"></script>
+		<script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.js"></script>
+		<script src="index.js"></script>
+		<title>小米商城移动端</title>
+	</head>
+	<body>
+		<header id="header">
+			<div class="top">
+				<div class="img"><img src="img/logo.png" alt="" /></div>
+				<input type="text" placeholder="搜索商品名称" id="sear"/>
+				<div class="img"><img src="img/user.png" alt="" /></div>
+			</div>
+			<div class="tabs">
+				<ul>
+					<li><a href="" class="active">推荐</a></li>
+					<li><a href="">手机</a></li>
+					<li><a href="">智能</a></li>
+					<li><a href="">电视</a></li>
+					<li><a href="">电脑</a></li>
+					<li><a href="">暑期大促</a></li>
+				</ul>
+			</div>
+		</header>
+		<div id="banner">
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><a href=""><img src="img/banner1.jpg" alt="" /></a></div>
+					<div class="swiper-slide"><a href=""><img src="img/banner2.jpg" alt="" /></a></div>
+					<div class="swiper-slide"><a href=""><img src="img/banner3.jpg" alt="" /></a></div>
+					<div class="swiper-slide"><a href=""><img src="img/banner4.jpg" alt="" /></a></div>
+					<div class="swiper-slide"><a href=""><img src="img/banner5.jpg" alt="" /></a></div>>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<div id="nav">
+			<ul>
+				<li><a href=""><img src="img/nav1.png" alt="" /></a></li>
+				<li><a href=""><img src="img/nav2.png" alt="" /></a></li>
+				<li><a href=""><img src="img/nav3.jpg" alt="" /></a></li>
+				<li><a href=""><img src="img/nv4.png" alt="" /></a></li>
+				<li><a href=""><img src="img/nav5.png" alt="" /></a></li>
+		</ul>
+		</div>
+		<section>
+			<div id="hotsale">
+				<div class="left"><img src="img/hot1.jpg" alt="" /></div>
+				<div class="right">
+					<img src="img/hot2.jpg" alt="" />
+					<img src="img/hot3.jpg" alt="" />
+				</div>
+			</div>
+			<!--广告1区-->
+			<div id="ad1">
+				<img src="img/ad1.jpg" alt="" />
+				<img src="img/ad2.jpg" alt="" />
+			</div>
+			<!--商品一区-->
+			<div id="shop1">
+				<ul>
+					<li>
+						<a href="">
+							<div class="img"><img src="img/item1.png" alt="" /></div>
+							<p>
+								<span class="name">红米5 Plus</span>
+								<span class="desc">全面屏，4000mAh大电量</span>
+								<span class="price">&yen;999起</span>
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="img"><img src="img/item2.jpg" alt="" /></div>
+							<p>
+								<span class="name">红米Note 5</span>
+								<span class="desc">1.4μm大像素 AI双摄</span>
+								<span class="price">&yen;999起   &nbsp;&nbsp;&nbsp;<del class="oldp">1999</del></span>
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="img"><img src="img/item3.jpg" alt="" /></div>
+							<p>
+								<span class="name">小米MIX 2 </span>
+								<span class="desc">5.99"大屏，4轴光学防抖</span>
+								<span class="price">&yen;2599起   &nbsp;&nbsp;&nbsp;<del class="oldp">3299</del></span>
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="img"><img src="img/item4.webp" alt="" /></div>
+							<p>
+								<span class="name">黑鲨游戏手机 液冷更快</span>
+								<span class="desc">液冷更快，独显芯片</span>
+								<span class="price">&yen;2999起</span>
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="img"><img src="img/item5.jpg" alt="" /></div>
+							<p>
+								<span class="name">米家电水壶 </span>
+								<span class="desc">一杯水，是一家人的安心</span>
+								<span class="price">&yen;99</span>
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="img"><img src="img/item6.jpg" alt="" /></div>
+							<p>
+								<span class="name">小米蓝牙项圈耳机</span>
+								<span class="desc">时尚外观，挂在脖子上的好耳机</span>
+								<span class="price">&yen;299 </span>
+							</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--广告二区-->
+			<div id="ad2">
+				<img src="img/ad3.jpg" alt="" />
+				<img src="img/ad4.jpg" alt="" />
+			</div>
+			<!--电视区-->
+			<div id="tv">
+				<ul>
+					<li>
+						<a href="">
+							<div class="img">
+								<img src="img/tv1.jpg" alt="" />
+								<div class="tag">
+									<img src="img/tag.png" alt="" />
+								</div>
+							</div>
+							<p>
+								<span class="name">小米电视4A 50英寸</span>
+								<span class="desc">4K HDR，人工智能语音系统</span>
+								<span class="price">&yen;1999   &nbsp;&nbsp;&nbsp;<del class="oldp">2199</del></span>
+							</p>
+		
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="img">
+								<img src="img/tv2.jpg" alt="" />
+								<div class="tag">
+									<img src="img/tag2.png" alt="" />
+								</div>
+							</div>
+							<p>
+								<span class="name">小米电视4A 55英寸</span>
+								<span class="desc">4K HDR，64位处理器</span>
+								<span class="price">&yen;2499   &nbsp;&nbsp;&nbsp;<del class="oldp">2799</del></span>
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="img">
+								<img src="img/tv3.jpg" alt="" />
+								<div class="tag">
+									<img src="img/tag3.png" alt="" />
+								</div>
+							</div>
+							<p>
+								<span class="name">小米电视4C 32英寸</span>
+								<span class="desc">高清液晶屏，人工智能系统</span>
+								<span class="price">&yen;849   &nbsp;&nbsp;&nbsp;<del class="oldp">999</del></span>
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="img">
+								<img src="img/tv4.jpg" alt="" />
+								<div class="tag">
+									<img src="img/tag4.png" alt="" />
+								</div>
+							</div>
+							<p>
+								<span class="name">55"电视4S 曲面</span>
+								<span class="desc">4K曲面屏，金属机身</span>
+								<span class="price">&yen;2999   &nbsp;&nbsp;&nbsp;<del class="oldp">3299</del></span>
+							</p>
+						</a>
+					</li>
+				</ul>
+				<!--更多-->
+				<div class="more">
+					<a href="">更多小米电视产品&nbsp;&nbsp;&gt;</a>
+				</div>
+			</div>
+			<!--广告三区-->
+			<div id="ad3">
+				<img src="img/ad5.jpg" alt="" />
+				<img src="img/ad6.jpg" alt="" />
+			</div>
+			<!--新品区-->
+			<div id="news">
+				<ul>
+					<li>
+						<a href="">
+							<div class="img">
+								<img src="img/new1.jpg" alt="" />
+								<div class="tag">
+									<img src="img/new.png" alt="" />
+								</div>
+							</div>
+							<p>
+								<span class="name">米家投影仪</span>
+								<span class="desc">三秒自动对焦，好用又好看</span>
+								<span class="price">&yen;3999</span>
+							</p>
+		
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="img">
+								<img src="img/new2.jpg" alt="" />
+								<div class="tag">
+									<img src="img/new.png" alt="" />
+								</div>
+							</div>
+							<p>
+								<span class="name">小米路由器4</span>
+								<span class="desc">双频双核 更快更稳定</span>
+								<span class="price">&yen;1999</span>
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="img">
+								<img src="img/new3.jpg" alt="" />
+								<div class="tag">
+									<img src="img/new.png" alt="" />
+								</div>
+							</div>
+							<p>
+								<span class="name">米兔儿童滑板车</span>
+								<span class="desc">安全好玩的酷玩具</span>
+								<span class="price">&yen;249</span>
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="img">
+								<img src="img/new4.jpg" alt="" />
+								<div class="tag">
+									<img src="img/new.png" alt="" />
+								</div>
+							</div>
+							<p>
+								<span class="name">小米VR一体机 </span>
+								<span class="desc">超乎寻常的虚拟体验</span>
+								<span class="price">&yen;1499起  </span>
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="img">
+								<img src="img/new5.jpg" alt="" />
+								<div class="tag">
+									<img src="img/new.png" alt="" />
+								</div>
+							</div>
+							<p>
+								<span class="name">70迈倒车摄像头</span>
+								<span class="desc">前后双录，多方位保护</span>
+								<span class="price">&yen;99</span>
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="img">
+								<img src="img/new6.jpg" alt="" />
+								<div class="tag">
+									<img src="img/new.png" alt="" />
+								</div>
+							</div>
+							<p>
+								<span class="name">米家运动鞋2</span>
+								<span class="desc">轻盈灵巧 动静皆宜</span>
+								<span class="price">&yen;199   &nbsp;&nbsp;&nbsp;<del class="oldp">3299</del></span>
+							</p>
+						</a>
+					</li>
+				</ul>
+				<!--更多-->
+				<div class="more">
+					<a href="">更多小米新品&nbsp;&nbsp;&gt;</a>
+				</div>
+			</div>
+			<!--广告四区-->
+			<div id="ad4">
+				<img src="img/ad7.jpg" alt="" />
+				<img src="img/ad8.jpg" alt="" />
+			</div>
+			<!--智能区-->
+			<div id="intel">
+				<div class="type1">
+					<div class="img"><img src="img/ty1.jpg" alt="" /></div>
+					<div class="text">
+						<p>
+							<span class="name">米家运动鞋2</span>
+							<span class="desc">轻盈灵巧 动静皆宜</span>
+							<span class="price">&yen;199 </span>
+						</p>
+					</div>
+				</div>
+				<div class="type2">
+					<div class="text">
+						<p>
+							<span class="name">米家运动鞋2</span>
+							<span class="desc">轻盈灵巧 动静皆宜</span>
+							<span class="price">&yen;199  </span>
+						</p>
+					</div>
+					<div class="img"><img src="img/ty2.jpg" alt="" /></div>
+		
+				</div>
+				<div class="type3">
+					<div class="img"><img src="img/ty3.jpg" alt="" /></div>
+					<div class="text">
+						<p>
+							<span class="name">米家运动鞋2</span>
+							<span class="desc">轻盈灵巧 动静皆宜</span>
+							<span class="price">&yen;199  </span>
+						</p>
+					</div>
+				</div>
+				<!--更多-->
+				<div class="more">
+					<a href="">更多小米智能产品&nbsp;&nbsp;&gt;</a>
+				</div>
+			</div>
+			<!--分类模块-->
+			<div id="sort">
+				<ul>
+					<li>
+						<a href=""><img src="img/sort1.webp" alt="" /></a>
+					</li>
+					<li>
+						<a href=""><img src="img/sort2.webp" alt="" /></a>
+					</li>
+					<li>
+						<a href=""><img src="img/sort3.webp" alt="" /></a>
+					</li>
+					<li>
+						<a href=""><img src="img/sort4.webp" alt="" /></a>
+					</li>
+				</ul>
+			</div>
+			<!--广告区-->
+			<div id="ad5">
+				<img src="img/ad.9.jpg" alt="" />
+			</div>
+			<div class="more">
+				<a href="">了解小米&nbsp;&nbsp;&gt;</a>
+			</div>
+		</section>
+		<footer id="footer">
+			<ul>
+				<li><a href="" class="active">
+					<span class="img"><img src="img/home.png" alt="" /></span>
+					<span class="title">首页</span>
+				</a></li>
+				<li><a href="">
+					<span class="img"><img src="img/sort.png" alt="" /></span>
+					<span class="title">分类</span>
+				</a></li>
+				<li><a href="">
+					<span class="img"><img src="img/chart.png" alt="" /></span>
+					<span class="title">购物车</span>
+				</a></li>
+				<li><a href="">
+					<span class="img"><img src="img/my.png" alt="" /></span>
+					<span class="title">我的</span>
+				</a></li>
+			</ul>
+		</footer>
+		<script>
+			//rem布局
+			var html=document.documentElement;
+			var width=window.screen.width;
+			//ip6下 1rem=25px;
+			html.style.fontSize=width/15+'px';
+			//swiper组件
+				 var swiper = new Swiper('.swiper-container', {
+				 	pagination: {
+				 		el: '.swiper-pagination',
+				 		dynamicBullets: true,
+				 	},
+				 });
+		</script>
+	</body>
+</html>
